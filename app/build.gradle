@@ -1,6 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.theappexperts.fragment"
@@ -43,4 +50,8 @@ dependencies {
     compile 'com.android.support:support-annotations:26.1.0'
     testCompile 'com.android.support:support-annotations:26.1.0'
     androidTestCompile 'com.android.support:support-annotations:26.1.0'
+
+    testImplementation "org.robolectric:robolectric:3.5.1"
+    testCompile "org.robolectric:robolectric:3.5.1"
+    testCompile "org.robolectric:shadows-support-v4:3.3.2"
 }

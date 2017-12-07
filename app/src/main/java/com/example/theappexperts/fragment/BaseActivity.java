@@ -9,7 +9,7 @@ import android.widget.Button;
 import com.example.theappexperts.fragment.fragments.FirstFragment;
 import com.example.theappexperts.fragment.fragments.SecondFragment;
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity{
 
     FragmentManager fragmentManager;
     private Button btnReplace;
