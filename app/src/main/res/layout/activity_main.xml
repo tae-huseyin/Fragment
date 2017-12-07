@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.theappexperts.fragment.MainActivity">
+
+    <fragment
+        android:id="@+id/frag1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.theappexperts.fragment.fragments.FirstFragment">
+
+    </fragment>
+
+    <fragment
+        app:layout_constraintTop_toBottomOf="@id/frag1"
+        android:id="@+id/frag2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.theappexperts.fragment.fragments.SecondFragment">
+
+    </fragment>
+
+</android.support.constraint.ConstraintLayout>
