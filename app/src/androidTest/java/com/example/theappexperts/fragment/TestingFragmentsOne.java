@@ -36,6 +36,7 @@ public class TestingFragmentsOne {
     @Test
     public void fragment_one_has_text() {
         onView(withId(R.id.tvFrag1)).check(matches(withText(R.string.hello_fragment_one)));
+        //with the new branch,l,;,;,.
     }
 
     @Test
